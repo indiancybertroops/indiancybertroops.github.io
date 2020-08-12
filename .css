@@ -1,0 +1,1052 @@
+*{
+    outline:none;
+}
+body{
+    font-family: "Barlow", sans-serif;
+    background-color:#ddd;
+    margin:0;
+    padding:0;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+.notific{
+    position:fixed;
+    top:0;
+    z-index:2;
+    width:100%;
+    display: inline-block;
+    border-bottom:1px solid #999;
+}
+.mobileloader{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background-color:#333;
+    color:#ddd;
+    z-index:3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+}
+img{
+    box-shadow:1px 1px 7px #000;
+    border-radius:50%;
+}
+.mapp{
+    display:inline-block;
+    padding-bottom:10px;
+}
+.mapp:active{
+    transform: translateY(4px);
+}
+.apname{
+    width:70px;
+    opacity:0.8;
+    cursor:default;
+    font-size:15px;
+}
+.apbtheme{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #eee;
+    overflow: scroll;
+    transition:0.25s; /*set the speed here.....*/
+}
+.backbtnz{
+    width:100%;
+    background-color:#000;
+    bottom:0;
+    position: absolute;
+    left:0;
+}
+.backbtnz .closeappbtn{
+    border:2px solid #aa0000;
+    opacity:0.9;
+    font-size:16px;
+    background-color:#000;
+    color:#fff;
+}
+.closeappbtn{
+    padding:8px;
+    border-radius:4px;
+    border:1px solid #4d0000;
+    opacity:0.9;
+    font-size:16px;
+    background-color:#ff6666;
+}
+.closeappbtn:active{
+    transform: translateY(2px);
+    box-shadow:0 0 #ff4040;
+}
+
+
+
+
+/*Assistant*/
+.botplayground{
+    padding:5px;
+    height:calc(100vh - 32px);
+    overflow:scroll;
+    width:100%;
+    box-sizing: border-box;
+}
+.closeasstbtn{
+    position:absolute;
+    bottom:2px; 
+    width: 20%;
+    left:0;
+    padding:5px;
+    text-align:center;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-right:0;
+    border-left:none;
+    border-radius:5px 0 0 5px;
+}
+.textbotmessage{
+    left:20%;
+    position:absolute;
+    padding:5px;
+    box-sizing: border-box;
+    bottom:2px;
+    border: 1px solid grey;
+    width: 70%;
+    background: #f1f1f1;
+    border-right:none;
+    border-left:none;
+    border-radius:0;
+}
+.textbotmessage:focus{
+    outline:none;
+}
+.sendbotbutton{
+    position:absolute;
+    bottom:2px; 
+    width: 10%;
+    padding:5px;
+    box-sizing: border-box;
+    right:0;
+    text-align:center;
+    border: 1px solid grey;
+    border-left:none;
+    border-radius:0 5px 5px 0;
+}
+.botinputform{
+    margin-bottom:0;
+}
+.botinputform::after{
+  content: "";
+  clear: both;
+  display: table;
+  margin:0;
+}
+#botcontent::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.message {
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 4px;
+    width:50%;
+    float:left;
+    font-size:16px;
+    background-color:#abb8c2;
+}
+.user {
+    border-color: #ccc;
+    float:right;
+    background-color:#fff;
+}
+.banthis {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.banthisz {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size:36px;
+    color:#ff3333;
+}
+
+
+
+/*Browser*/
+.mainhomescr{
+    background-image:url("http://jaydeepkhatri.000webhostapp.com/music/strbkg.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#aaa;
+    font-family: 'Roboto', sans-serif;
+}
+.browserap{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    left:0;
+    right:0;
+    z-index:2;
+    background-color:#ddd;
+}
+.inputxzz{
+    margin: auto;
+    text-align:center;
+    padding:10px;
+    /*border:2px solid #ff0;*/
+}
+.browinp{
+    padding:8px;
+    font-size:18px;
+    width:300px;
+    border-radius:8px;
+    border:0;
+    z-index:3;
+}
+.browinp:active, .browinp:hover, .browinp:focus{
+    outline:none;
+}
+.browsearchbtn{
+    padding:5px;
+    background-color:#aec;
+}
+.browselogo{
+    letter-spacing:3px;
+    color:#fff;
+    font-weight:lighter;
+}
+.browsearchbtn{
+    height:35px;
+    border:1px solid transparent;
+    border-radius:3px;
+    font-size:0.8em;
+    font-weight:800;
+    color:#555;
+    background-color:#EEE;
+    transition-duration:0.2s;
+}
+.browsearchbtn:hover, .browsearchbtn:active{
+    border:1px solid #333;
+    color:#333;
+    box-shadow:0 0 5px #000;
+}
+.mainscr{
+    height:calc(100vh - 48px);
+    width:100%;
+    overflow:hidden;
+    display:none;
+    position:fixed;
+    left:0;
+    top:16px;
+    background-color:#fff;
+    z-index:2;
+}
+.browbbtns{
+    width:20%;
+    float:left;
+    text-align:center;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+
+
+
+/*Calculator*/
+.calctable{
+    position:fixed;
+    bottom:0;
+    height:60%;
+    border-collapse:collapse;
+    border-top:1px solid #aaa;
+}
+.calcnum{
+    height: 25%;
+    font-size: 30px;
+}
+.calcbut{
+    transition:0.05s;
+}
+.calcbut:hover, .calcbut:focus, .calcbut:active{
+    background-color:#ddd;
+}
+#calcinput{
+    position: fixed;
+    bottom:70%;
+    width:98%;
+    font-size: 36px;
+    padding:4px;
+    background-color:#eee;
+    border:0;
+    text-align:right;
+    color:#000;
+}
+#calcoutput{
+    position: fixed;
+    bottom:60%;
+    width:98%;
+    font-size: 36px;
+    padding:4px;
+    background-color:#eee;
+    border:0;
+    color:#000;
+    text-align:right;
+}
+
+
+
+
+/*Calendar*/
+.caltable{
+    border-collapse:collapse;
+    text-align:center;
+}
+.caltoday{
+    background-color:#333;
+    color:#ccc;
+}
+.calbtns{
+    width:25%;
+    display:inline-block;
+}
+.calbtn{
+    background-color:#ddd;
+    padding:5px;
+    border:1px solid #999;
+    border-radius:3px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.calmonths{
+    width:50%;
+    display:inline-block;
+}
+
+
+
+/*Clock*/
+.clocktime{
+    font-size:40px;
+}
+.mainclock{
+    height:calc(100vh - 32px);
+    overflow:scroll;
+}
+.clocksecond{
+    font-size:20px;
+}
+
+
+/*Developer*/
+.devfunc{
+    border:1px solid #ddd; 
+    color:#ff4c4c;
+    font-weight:900;    
+    padding:10px;
+    box-sizing: border-box;
+}
+.helpdevul{
+    list-style-type: circle;
+}
+.userwcdevz{
+    padding:20px;
+    box-sizing: border-box;
+    height:calc(100vh - 32px);
+    overflow:scroll;
+}
+.devlcodefun{
+    color:#00f;
+}
+
+
+/*Devs*/
+td{
+    padding:5px;
+    cursor:default;
+    transition:0.25s;
+}
+.devs{
+    text-decoration: none;
+    color:black;
+}
+.setava{
+    border:2px solid #aaa;
+    border-radius:50%;
+    width:50%;
+    cursor:default;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
+    -webkit-transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite; 
+}
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}
+
+
+
+/*E-mail*/
+#by{
+    background-color:#f2f2f2;
+    color:#aaa;
+    padding:5px;
+    border-radius:5px;
+}
+#dev{
+    color:black;
+}
+.closeemailappbtn{
+    width:50%;
+    position:fixed;
+    border:0;
+    bottom:0;
+    padding:8px;
+    box-sizing: border-box;
+    left:0;
+    float:left;
+    display:none;
+}
+.replyemailbtn{
+    width:50%;
+    position:fixed;
+    border:0;
+    padding:8px;
+    box-sizing: border-box;
+    bottom:0;
+    right:0;
+    float:right;
+    display:none;
+}
+.inputmaad{
+    width:100%;
+    border:0;
+    padding:10px;
+    margin-bottom:5px;
+    box-sizing: border-box;
+    /*border-bottom:1px solid #000;*/
+}
+.textarearep{
+    width:100%;
+    border:0;
+    padding:10px;
+    font-size:18p;
+    box-sizing:border-box;
+    background-color: #fff;
+}
+.emailmsg {
+    background: #e91e63;
+    color: #FFF;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    word-wrap: break-word;
+
+}
+.emailmsg:before {
+    background: #e91e63;
+    width: 12pt;
+    height: 12pt;
+    display: inline-block;
+    content: ' ';
+    transform: rotate(45deg);
+    position: relative;
+    left: -10pt;
+    top: 50%;
+    margin: 0;
+    padding:0;
+}
+
+
+
+/*Map*/
+.mapmainscr{
+    background-image:url("http://jaydeepkhatri.000webhostapp.com/music/SL/gmap.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapforinp{
+    margin:auto;
+    text-align:center;
+    padding:10px;
+}
+.mainmap{
+    height:calc(100vh - 36px);
+    width:100%;
+    border:0;
+    overflow:hidden;
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    background-color:#fff;
+    z-index:3;
+}
+.mapinp{
+    padding:8px;
+    font-size:18px;
+    border:1px solid #aaa;
+    border-radius:2px;
+    width:300px;
+}
+.closemapbtn{
+    width:100%;
+    position:absolute;
+    padding:5px;
+    bottom:0;
+    font-size:18px;
+    left:0;
+    border:0;
+    background-color:#ff6666;
+}
+
+
+
+/*Music*/
+.mainmusicb{
+    bottom:0;
+
+    position:fixed;
+    width:100%;
+}
+.songname{
+    width:50%;
+    display:inline-block;
+}
+.songdur, .songrandom{
+    width:20%;
+    display:inline-block;
+}
+.songrandom{
+    width:25%;
+    display:inline-block;
+    border:1px solid #000;
+    padding:3px 0 3px 0;
+    border-radius:5px;
+    background-color:#ddd;
+    box-shadow:0 3px 10px 0 rgba(0,0,0,0.6)
+}
+.songrandom:active{
+    transform:translateY(4px);
+}
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 95%;
+    height: 7px;
+}
+progress[value]::-webkit-progress-value {
+    background-color:#000;
+    border-radius: 0;
+    float:left;
+}
+progress::-webkit-progress-bar {
+    background-color: #DDD;
+}
+.seekprogress{
+    padding:8px;
+}
+.mbutton{
+    padding:6px;
+    border-radius:40%;
+    border:1px solid #aaa;
+    font-size:18px;
+    display:inline-block;
+}
+.mbutton:focus{
+    outline:none;
+}
+.tabmusic{
+    padding:2px;
+}
+.mloading{
+    position: fixed;
+    top:25%;
+    left:12.5%;
+    width:70%;
+    height:20%;
+    border:2px solid black;
+    align-items: center;
+    padding-top:35px;
+    font-size: 35px;
+    border-radius:5px;
+    box-shadow: 5px 5px black;
+    background-color: #ddd;
+    display:none;
+}
+.volumeslider {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    border-radius:15px;
+    top:5px;
+}
+.volumeslider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius:50%;
+}
+.musicstic{
+    display: inline-block;
+    list-style-type: none;
+    background-color: #00ffbf;
+    padding: 12px;
+    border-radius:9px;
+    box-shadow:0 0 4px #000;
+}
+.musicbars{
+    padding:5px;
+    bottom:0;
+    position:relative;
+}
+
+
+
+/*Phone*/
+.keymtable{
+    position: fixed;
+    bottom:0;
+    height: 65%;
+    border-top:1px solid #aaa;
+}
+.keyntable{
+    font-size: 32px;
+    vertical-align: middle;
+}
+.keyatable{
+    font-size:12px;
+    opacity:0.8;
+}
+.inputnumber{
+    font-size:40px;
+    font-family: "Barlow", sans-serif;
+    position: fixed;
+    bottom:67%;
+    width:100%;
+    border:none;
+    background-color:#eee;
+    text-align:center;
+}
+.phonecall{
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    border:2px solid #ddd;
+}
+.phonekeypad{
+    transition:0.1s;
+}
+.phonekeypad:hover, .phonekeypad:focus, .phonekeypad:active{
+    background-color:#ddd;
+}
+.phoneico{
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.35em 0.25em;
+}
+
+
+
+
+/*Photo Editor*/
+.iemimg{
+    border-radius: 0;
+}
+.iemimg:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+div.imgHere{
+    width: 95%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin:0 auto;
+    padding:10px;
+    box-sizing: border-box;
+}
+div.container {
+    text-align: center;
+    padding:-5px;
+}
+#name{
+    color:#aaa;
+    text-transform:uppercase ;
+}
+#blink{
+    color:#000;
+    animation: blink 0.9s  1s infinite forwards;
+    display: inline-block;
+    transform: rotateZ(90deg);
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.styleControl{
+    padding:0;
+    text-align:center;
+    transform:translateY(-20px);
+}
+.iedefslidecontainer{
+  display:none;
+}
+select{
+    padding:8px;
+    border-radius:4px;
+    border:1px solid #ddd;
+    opacity:0.9;
+    font-size:18px;
+    background-color:#f2f2f2;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 12px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 35%;
+    background: #0f97f9;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #0f97f9;
+}
+.ietabs li{
+    display:inline ;
+}
+.iebortab{
+    padding:5px;
+    color:#fff;
+    border-radius:5px;
+    cursor:default;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.ier{
+    background:#F44336;
+}
+.ieb{
+    background:#0f97f9;
+}
+.ieg{
+    background:#4CAF50;    
+}
+.iey{
+    background:#FF9800;    
+}
+.ieborstab{
+    background:#F2f2f2;
+    padding:5px;
+    color:#aaa;
+    cursor: default;
+    border-radius:5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.dot{
+    border-style:dotted;        
+}
+.dash{
+    border-style:dashed;      
+}
+.double{
+    border-style:double; 
+}
+.solid{
+    border-style:solid;
+}
+.inset{
+    border-style:inset;
+}
+.iewrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+.iegrid{
+    padding:10px;
+    font-size:20px;
+    border:1px solid #ddd;
+    text-align: center;
+}
+
+
+
+
+/*Settings*/
+.seticosiz{
+    border:2px solid #ddd;
+    border-radius:5px;
+    background-color:#ddd;
+}
+#seticobtn2{
+    background-color:#aabac2;
+}
+.powerbutton{
+    padding:10px;
+    border:0;
+    background: linear-gradient(30deg, #000, #555);
+    box-shadow: 0 0 10px #f00;
+    color:#f33;
+    border-radius:13px;
+}
+.powerbutton:active{
+    transform: translateY(4px);
+}
+
+
+/*SoloLearn*/
+.ifsololearn{
+    width:100%;
+    height:calc(100vh - 44px);
+}
+
+
+/*Stop Watch*/
+.cldevbtn{
+    padding:8px;
+    border-radius:4px;
+    border:1px solid #ddd;
+    opacity:0.9;
+    font-size:18px;
+    margin-bottom: 8px;
+    background-color:#f2f2f2;
+}
+.cldevbtn:active{
+    transform: translateY(5px);
+    box-shadow:0 0 #737373;
+}
+
+
+
+/*Terminal*/
+#materminal{
+    overflow:scroll;
+    /*height:200px;*/
+}
+.terminal{
+    background-color:#000;
+    color:#0c0;
+    font-size:20px;
+    padding:5px 5px 28px 5px;
+    font-family: 'VT323', monospace;
+}
+.terminaltext{
+    bottom:0;
+    width:65%;
+    left:20%;
+    border:0;
+    position:absolute;
+    padding:5px;
+    font-size:18px;
+    background-color:#393; 
+    border-radius:0;
+    color:#ddd;
+    box-sizing: border-box;
+}
+.sendtermmsg{
+    bottom:0;
+    width:15%;
+    right:0;
+    border:0;
+    position:absolute;
+    padding:5px;
+    font-size:18px;
+    background-color:#363; 
+    border-radius:0 3px 3px 0;
+    color:#ddd;
+    box-sizing: border-box;
+}
+.closetermbtn{
+    bottom:0;
+    width:20%;
+    left:0;
+    border:0;
+    position:absolute;
+    padding:5px;
+    font-size:18px;
+    background-color:#363; 
+    border-radius:3px 0 0 3px;
+    color:#ddd;
+    box-sizing: border-box;
+}
+
+
+
+/*TextEditor*/
+.texteditbutton{
+    border-radius:10%;
+    padding:6px 6px;
+    margin-bottom:3px;
+    border:2px solid #ddd;
+}
+.tebarlow{
+    font-family:'Barlow', sans-serif;
+}
+.tebaloobhaijaan{
+    font-family:'Baloo Bhaijaan', cursive;
+}
+.tecaveat{
+    font-family:'Caveat', cursive;
+}
+.teindieflower{
+    font-family:'Indie Flower', cursive;
+}
+.temonoton{
+    font-family:'Monoton', cursive;
+}
+.tepattaya{
+    font-family:'Pattaya', sans-serif;
+}
+.tesatisfy{
+    font-family:'Satisfy', cursive;
+}
+.teshadowsintolight{
+    font-family:'Shadows Into Light', cursive;
+}
+.tespicyrice{
+    font-family:'Spicy Rice', cursive;
+}
+
+
+
+/*Themes*/
+.themcolo{
+    width:20px;
+    padding:20px;
+    margin-top:5px;
+    display: inline-block;
+    border-radius:50%;
+    cursor:default;
+    transition:0.1s;
+}
+.themcolo:hover{
+    box-shadow:0 0 5px #000;
+}
+.themcolo1{
+    background-color: #ff691f;
+}
+.themcolo2{
+    background-color: #fab81e;
+}
+.themcolo3{
+    background-color: #7fdbb6;
+}
+.themcolo4{
+    background-color: #19cf86;
+}
+.themcolo5{
+    background-color: #91d2fa;
+}
+.themcolo6{
+    background-color: #1b95e0;
+}
+.themcolo7{
+    background-color: #abb8c2;
+}
+.themcolo8{
+    background-color: #e81c4f;
+}
+.themcolo9{
+    background-color: #f58ea8;
+}
+.themcolo10{
+    background-color: #981ceb;
+}
+
+
+/*Unit Converter*/
+.unitccon{
+    height: calc(100vh - 32px);
+    overflow:scroll;
+}
+.unitconlist{
+    width:90%;
+    border-radius:3px;
+    background-color: #211;
+    color:#ddd;
+    padding:8px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+    cursor:default;
+}
+
+/*Videos*/
+.vidiframe{
+    width:95%;
+    height:270px;
+    border:1px solid #333;
+}
+.videolist{
+    padding:10px;
+}
+.videoinputuser{
+    padding:8px;
+    font-size:18px;
+    border:1px solid #aaa;
+    border-radius:2px;
+}
+.videoitem{
+    background-color:#ddf;
+    padding:10px;
+    margin-top:10px;
+    cursor:default;
+}
+
+
+/*So you scrolled in CSS section also😂😂*/
